@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,400;0,500;0,700;1,100;1,300&family=Quicksand:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="images/spotify.png">
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="logo">
+            <a href=""><img src="images/Spotify_Logo_CMYK_Green.png" alt="logo"></a>
+        </div>
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="intex.html"><span class="fa fa-home"></span>
+                        <span>home</span></a>
+                </li>
+                <li>
+                    <a href="songpage.html"><span class="fa fa-search"></span>
+                        <span>search</span></a>
+                </li>
+            </ul>
+        </div>
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href=""><span class="fa fas fa-book"></span>
+                        <span>your library</span></a><span class="libraryplus">+</span>
+                </li>
+            </ul>
+            <div class="playlist">
+                <div class="playlistsectionone">
+                    <h4>create your first playlist</h4>
+                    <p>it's easy,we'll help you</p>
+                    <div><button>create playlist</button></div>
+                </div>
+                <div class="playlistsectiontwo">
+                    <h4>let's find some podcasts to follow</h4>
+                    <p>we'll keep you updated on new episodes</p>
+                    <div><button>Browse podcasts</button></div>
+                </div>
+            </div>
+            <div class="policies">
+                <ul>
+                    <li>Legal<span>Privacy center</span><span>Privacy Policy</span></li>
+                    <li>Cookies<span>About Ads</span> <span></span>Accessibility</li>
+                    <li>notice at collection</li>
+                    <li>your privacy choices </li>
+                    <li class="cookies">cookies</li>
+                </ul>
+                <div class="lang"><button class="fa-solid fa-earth-americas"> English</button></div>
+            </div>
+        </div>
+    </div>
+    <div class="main-container">
+        <div class="topbar">
+            <div class="next-button">
+                <button type="button" class="fa fas fa-chevron-left"></button>
+                <button type="button" class="fa fas fa-chevron-right"></button>
+            </div>
+            <div class="navbar">
+                <ul>
+                    <li>
+                        <a href="signup.html">sign up</a>
+                    </li>
+                </ul>
+                <a href="login.html"><button type="button">log in</button></a>
+            </div>
+        </div>
+        <div class="songsection">
+            <div class="imgsection">
+                <h4>Playlist</h4>
+                <h1>Today's top hits</h1>
+                <p>selena is on top of the hottest 50!</p>
+                <div><span><img src="images/spotify.png"></span>spotify . 34,548,983 likes . 50 songs ,about 2hr 45min
+                </div>
+                <div class="songsectionone">
+                    <div class="playbuttonsection">
+                        <div><span><i class="fa fa-play"></i></span></span> <span><i
+                                    class="fa-regular fa-heart fa-2xl"></i></span> <span><i
+                                    class="fa-solid fa-ellipsis fa-2xl"></i></span></div>
+                        <div class="listsolid">list <i class="fa-solid fa-list fa-lg"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="detailssongs">
+                <div class="heading">
+                    <div class="titlehead"># Title</div>
+                    <div class="albumhead">album</div>
+                    <div class="datehead">date added</div>
+                    <div class="clockhead"><i class="fa-regular fa-clock"></i></div>
+                </div>
+            </div>
+            <div class="songs">
+                <div class="heading">
+                    <div><span id="play" class="">1</span><img src="images/selena.jpg"><span class="spanfloat"
+                            onclick="playaudio()">calm down<br>rema</span></div>
+                    <div class="album0">calm down</div>
+                    <div>1 day ago</div>
+                    <div><span><i class="fa-regular fa-heart"></i>3:59 <span><i class="fa-solid fa-ellipsis"></i></span>
+                    </div>
+                </div>
+            </div>
+            <div class="songs">
+                <div class="heading">
+                    <div><span id="play1">2</span><img src="images/beberexha.jpg"><span class="spanfloat" id="spanfloat"
+                            onclick="playaudio1()">i am good<br>bebe rexha</span></div>
+                    <div class="album00">i am good</div>
+                    <div>2 days ago</div>
+                    <div><span><i class="fa-regular fa-heart"></i>2:55 <span><i class="fa-solid fa-ellipsis"></i></span>
+                    </div>
+                </div>
+            </div>
+            <div class="songs">
+                <div class="heading">
+                    <div><span id="play2">3</span><img src="images/dua lipa.jpg"><span class="spanfloat"
+                            onclick="playaudio2()">one kiss<br>dua lipa</span></div>
+                    <div class="album1">one kiss</div>
+                    <div class="date1">4 days ago</div>
+                    <div class="time1"><span><i class="fa-regular fa-heart"></i>3:32 <span><i
+                                    class="fa-solid fa-ellipsis"></i></span></div>
+                </div>
+            </div>
+            <div class="songs">
+                <div class="heading">
+                    <div><span id="play3">4</span><img src="images/edsheern.jpg"><span class="spanfloat"
+                            onclick="playaudio3()" >shape of you<br>ed sheeran</span>
+                    </div>
+                    <div class="album2">shape of you</div>
+                    <div class="date2">6 days ago</div>
+                    <div><span><i class="fa-regular fa-heart"></i>3:55 <span><i class="fa-solid fa-ellipsis"></i></span>
+                    </div>
+                </div>
+            </div>
+            <div class="songs">
+                <div class="heading">
+                    <div class="title"><span id="play4">5</span><img src="images/doja cat.jpg"><span class="spanfloat"
+                            onclick="playaudio4()">boss bitch<br>doja
+                            cat</span></div>
+                    <div class="album3">boss bitch</div>
+                    <div>10 days ago</div>
+                    <div><span><i class="fa-regular fa-heart"></i>2:14 <span><i class="fa-solid fa-ellipsis"></i></span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div>
+                    <ul>
+                        <li class="head">company</li>
+                        <li>about</li>
+                        <li>jobs</li>
+                        <li>for the record</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li class="head2">communities</li>
+                        <li>for artists</li>
+                        <li>developers</li>
+                        <li>advertising</li>
+                        <li>investors</li>
+                        <li>vendors</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li class="head">useful links</li>
+                        <li>support</li>
+                        <li>free mobile app</li>
+                    </ul>
+                </div>
+                <div><i class="fa-brands fa-instagram"></i> <i class="fa-brands fa-twitter"></i> <i
+                        class="fa-brands fa-facebook"></i></div>
+            </div>
+            <div class="copyright">
+                © 2023 Spotify AB
+            </div>
+
+        </div>
+
+        <div class="preview1" id ='preview1'>
+            <div class="previewimg">
+                <div>
+                    <img src="images/selena.jpg" width="50px" id="selenaimg" />
+                </div>  
+                <div class="pri1"><span id="prispan">calm down</span><br><span id="prispan1">rema</span></div>
+                <div class="fa-regular fa-heart pri2 fa-xl"></div>
+            </div>
+            <div class="player">
+                <button class="fa-solid fa-shuffle fa-lg"></button>
+                <button class="fa-solid fa-backward-step fa-lg"></button>
+                <button class="fa-solid fa-circle-play fa-2xl" id="circleplay" onclick=""></button>
+                <button class="fa-solid fa-forward-step fa-lg"></button>
+                <button class="fa-solid fa-arrow-up-right-from-square fa-lg"></button>
+                <div><input type="range"></div>
+            </div>
+            <div class="playerdetails">
+                <button class="fa-regular fa-file-video fa-lg"></button>
+                <button class="fa-solid fa-microphone-lines fa-lg"></button>
+                <button class="fa-solid fa-user fa-lg"></button>
+                <button class="fa-solid fa-volume-high fa-lg"></button>
+                <button class="fa-solid fa-window-restore fa-lg"></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/1a30bf37a1.js" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

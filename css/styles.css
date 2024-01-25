@@ -1,0 +1,907 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-transform: capitalize;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #121212;
+}
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width:210px;
+    background-color: #000000;
+    padding: 24px;
+    overflow: hidden;
+  }
+ 
+  .sidebar .logo img{
+    width: 80px;
+  }
+  .navigation ul{
+    list-style: none;
+    margin-top: 20px;
+  }
+  .navigation ul li{
+    padding: 10px 0px;
+  }
+ .navigation ul li a{
+    color:#b3b3b3;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+  }
+  .navigation ul li a:hover{
+    color: #ffffff;
+  }
+  .navigation ul li a:hover.fa{
+    color:#b3b3b3;
+  }
+  .navigation ul li .fa
+  {
+    font-size: 20px;
+    margin-right: 10px;
+    color: #b3b3b3;
+  }
+  .navigation ul li a:hover .fa:hover{
+    color:#ffffff
+  }
+  .libraryplus{
+    color: #b3b3b3;
+    font-size: 35px;
+    position: absolute;
+    top:173px;
+  right: 30px;
+   width: 13%;
+   height: 41px;
+   text-align: center;
+   border-radius: 100px;
+  }
+  .libraryplus:hover{
+color:#ffffff;
+background-color: #252525;
+cursor: pointer;
+  }
+  .policies{
+    position: absolute;
+    bottom:100px
+  }
+  .policies ul li{
+    padding-bottom: 5px;
+  }
+  .policies ul li{
+color: #b3b3b3;
+text-decoration: none;
+font-weight: 500;
+font-size: 10px;
+padding: 10px;
+  }
+  .policies ul li span{
+    margin-left: 10px;
+  }
+  .policies ul li:hover{
+cursor: pointer;
+  }
+  .policies ul .cookies:hover{
+text-decoration: underline;
+  }
+  .main-container{
+    margin-left: 245px;
+    margin-bottom: 100px;
+    overflow: hidden;
+  }
+  .topbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: #101010;
+    opacity: 0.9;
+    padding: 10px 30px;
+    align-items: center;
+    position: fixed;
+    right: 0;
+    left: 19%;
+    overflow: hidden;
+
+  }
+  .next-button button{
+    color: #7a7a7a;
+    cursor: not-allowed;
+    width: 34px;
+    height: 34px;
+    border-radius: 100%;
+    font-size: 18px;
+    border: 0px;
+    background-color: #090909;
+    margin-right: 10px;
+  }
+  .navbar{
+    display: flex;
+    align-items: center;
+
+  }
+  .navbar ul{
+    list-style: none;
+  }
+  .navbar ul li{
+    display: inline-block;
+    margin: 0px 8px;
+    width: 70px;
+  }
+  .navbar ul li a{
+    color: #b3b3b3;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+  .navbar ul li a:hover{
+    color:#ffffff;
+    font-size: 15px;
+   
+  }
+  .navbar button{
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 14px 30px;
+    border: 0px;
+    border-radius: 40px;
+    cursor: pointer;
+    margin-left: 20px;
+  }
+  .navbar button:hover{
+background-color: #f2f2f2;
+  }
+  .preview{
+    position: fixed;
+    bottom: 0;
+    left:0;
+    right: 0;
+    background: linear-gradient(to right , #ae2896,#509bf5);
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .preview h6{
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+  .preview p{
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .preview button{
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 16px;
+    padding: 14px  30px;
+    font-weight: bold;
+    border: 0px;
+    border-radius: 40px;
+    cursor: pointer;
+  }
+  .spotify-playlist{
+    padding: 20px 30px;
+  }
+  .spotify-playlist h2
+  {
+    color: #ffffff;
+    font-size: 22px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+    margin-top: 62px;
+  }
+  .spotify-playlist .list{
+display: flex;
+justify-content: space-around;
+overflow: hidden;
+margin-left: 10px;
+gap:20px;
+  }
+.list .item{
+min-width: 150px;
+width: 150px;
+padding: 15px;
+background-color: #181818;
+border-radius: 6px;
+cursor: pointer;
+transition: all ease 0,.4s;
+  }
+  .list .item:hover{
+    background-color: #252525;
+  }
+  .list .item img{
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    height: 60%;
+  }
+  .list .item .play{
+    position: relative;
+  }
+  .list .item .play .fa{
+    position: absolute;
+    right: 10px;
+    top:-60px;
+    padding: 18px;
+    background-color: #1db954;
+    border-radius: 100%;
+    opacity: 0;
+    transition: all ease 0.4s;
+  }
+  .list .item:hover .play .fa
+  {
+    opacity: 1;
+    transform: translateY(-20px);
+  }
+  .list .item h4{
+    color: #ffffff;
+    font-size: 14px;
+    margin-bottom: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .list .item p{
+    color: #989898;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 600;
+  }
+  .showall{
+    color: #989898;
+    font-weight: bold;
+    padding:10px;
+    margin-right: 20px;
+    font-size: 13px;
+    text-decoration: none;
+    margin-left: 755px
+  }
+  .showall:hover{
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  .playlist{
+    color: #ffffff;
+    font-weight: bold;
+    height: 50px;
+    width: 100%;
+    overflow: auto;
+    margin-top: 20px;
+    padding: 10px;
+  }
+  .playlist p{
+    font-size: 13px;
+    margin-top: 10px;
+  }
+  .playlistsectionone{
+padding: 10px;
+background-color: #1d1d1d;
+border-radius: 10px;
+  }
+.playlistsectionone button{
+  margin-top: 10px;
+  background-color: #ffffff;
+  color: #000000;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+.playlistsectionone button:hover{
+  padding: 11px;
+}
+.playlistsectiontwo{
+  padding: 10px;
+  background-color: #1d1d1d;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+.playlistsectiontwo button{
+  margin-top: 10px;
+  background-color: #ffffff;
+  color: #000000;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+.playlistsectiontwo button:hover{
+  padding: 11px;
+}
+.lang{
+  padding: 10px;
+  width: max-content;
+}
+.lang button{
+  padding: 10px;
+  border: solid 1px gray;
+  border-radius: 50px;
+  background-color: #000000;
+  letter-spacing: 1px;
+  color: #ffffff;
+  font-size: 10px;
+}
+.lang button:hover{
+cursor: pointer;
+}
+.footer{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  border-bottom: solid 1px #7a7a7a;
+  padding-bottom: 40px;
+  padding-top: 90px;
+  font-weight: bold;
+  font-size: small;
+}
+.head2{
+  padding-top: 65px;
+  color:#ffffff !important;
+}
+.footer ul{
+  list-style: none;
+}
+.footer ul li{
+  list-style: none;
+  margin: 10px;
+  color: #7a7a7a;
+  cursor: pointer;
+}
+.footer ul li:hover{
+text-decoration: underline;
+}
+.footer .head:hover{
+  text-decoration: none;
+  cursor: default;
+}
+.footer .head{
+  color: #ffffff;
+}
+.fa-brands{
+  padding: 10px;
+  border-radius: 100px;
+  margin: 10px;
+  background-color: gray;
+}
+.fa-brands:hover{
+  background-color: #f2f2f2;
+  cursor: pointer;
+}
+.copyright{
+  color: #7a7a7a;
+  padding: 20px;
+}
+  ::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    display: none;
+ background: #181818;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+   background-color: #f2f2f2;
+    display: block;
+  }
+
+  /*========================================== song section  =================================== */
+ .songsection{
+  overflow: hidden;
+  background-position: fixed;
+  color:#ffffff;
+  padding: 50px;
+  background-color: #121212;
+  font-weight: bold;
+ }
+ .imgsection{
+  background-image: url("https://4kwallpapers.com/images/wallpapers/selena-gomez-it-ain-t-me-black-background-5k-3840x1080-2018.jpg");
+background-size: 100%;
+background-repeat: no-repeat; 
+background-position: center;
+backface-visibility: hidden;
+}
+ .songsection h4{
+  color: #7a7a7a;
+  font-size: small;
+  padding-left: 10px;
+ }
+ .songsection h1{
+  font-size: 80px;
+  margin-top: 20px;
+  padding-left: 10px;
+ }
+ .songsection p{
+  color:#7a7a7a;
+  margin-top: 50px;
+  font-size:small ;
+  padding-left: 10px;
+ }
+ .songsection img{
+  width: 25px;
+  padding-top: 10px;
+  margin-right: 10px;
+  padding-left: 10px;
+ }
+ .songsection div{
+  align-items: center;
+  font-size: small;
+ }
+ .songsectionone{
+  margin-top: 20px;
+  padding-top: 20px;
+  padding: 20px;
+  padding-bottom: 0;
+  width: 101%;
+  background-color: #121212;
+ }
+ .playbuttonsection{
+display: flex;
+justify-content: space-between;
+ }
+ .songsectionone div span{
+  padding: 10px;
+ }
+ .songsectionone div span .fa-play{
+  padding: 18px;
+  background-color:#1db954;
+  border-radius: 100px;
+  transition: 1s;
+  color: #000000;
+ }
+ .songsectionone div span .fa-play:hover{
+  cursor: pointer;
+  transform: scale(90%);
+ }
+ .songsectionone div span .fa-regular{
+  padding: 20px;
+  color: #7a7a7a;
+  transition: 1s;
+ }
+ .songsectionone div span .fa-regular:hover{
+cursor: pointer;
+transform: scale(90%);
+color: #ffffff;
+ }
+ .playbuttonsection div .fa-list{
+  margin-left: 5px;
+  margin-right: 30px;
+ }
+ .playbuttonsection div{
+  color: #7a7a7a;
+ }
+ .playbuttonsection .listsolid:hover{
+  color: #ffffff;
+  cursor: pointer;
+ }
+ .fa-ellipsis{
+  color:#7a7a7a;
+  transition: 1s;
+  padding-left: 10px;
+ }
+ .fa-ellipsis:hover{
+  color: #ffffff;
+  transform: scale(90%);
+  cursor: pointer;
+ }
+.songs .fa-heart{
+  padding-right: 10px;
+}
+.songs .fa-heart:hover{
+  color: #ffffff;
+  cursor: pointer;
+}
+ .detailssongs .heading{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color:#7a7a7a;
+ }
+ .detailssongs .heading div{
+  padding-right: 90px;
+ }
+.albumhead{
+margin-left: 120px;
+}
+
+ .detailssongs{
+  margin-top: 30px;
+  border-bottom: solid 1px gray;
+ }
+ .songs{
+  color:#7a7a7a;
+  margin: 10px;
+  padding: 10px;
+ }
+ .songs:hover {
+  border-radius: 10px;
+background-color: #1d1d1d;
+ }
+ .songs:hover .spanfloat{
+color:#ffffff;
+ }
+ .spanfloat:hover{
+  text-decoration: underline;
+  cursor: pointer;
+ }
+ .songs:hover i{
+  visibility: visible;
+ }
+ .songs:hover .album0{
+  color:#ffffff
+ }
+ .songs:hover .album00{
+  color:#ffffff
+ }
+ .songs:hover .album1{
+  color:#ffffff
+ }
+ .songs:hover .album2{
+  color:#ffffff
+ }
+ .songs:hover .album3{
+  color:#ffffff
+ }
+ .songs .heading{
+  display: flex;
+  justify-content: space-between;
+ }
+.songs i{
+  visibility: hidden;
+}
+ .songs .heading img{
+  border-radius: 3px;
+  width: 40px;
+  padding-left: 10px;
+ }
+ .album1{
+ padding-left: 15px;
+ }
+ .date1{
+  padding-left: 14px;
+ }
+ .time1{
+  padding-right: 3px;
+ }
+ .album2{
+padding-right: 9px;
+ }
+ .date2{
+  padding-right: 20px;
+   }
+   .spanfloat{
+    float: right;
+   }
+   /* ===========================================Signup page================================================================== */
+   .signuppage{
+    background-color: #121212;
+    margin-top: 30px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+   }
+   .signpagelogo{
+    width: 8%;
+    margin-left: 30px;
+   }
+   .signuppagecontainer{
+    width: 29%;
+    margin: auto;
+    
+   }
+   .signuppagecontainer h1{
+    padding: 20px;
+    font-size: 40px;
+   }
+   .signupemail{
+    text-transform:none;
+    padding: 20px;
+    padding-bottom: 5px;
+    font-size: small;
+
+   }
+   .signuppagecontainer input{
+    width: 70%;
+    overflow: hidden;
+    margin: 20px;
+    padding: 13px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    background-color: #121212;
+    color:#ffffff;
+    text-transform: none;
+    
+   }
+   .signuppagecontainer button{
+    width: 75%;
+    overflow: hidden;
+    margin: 30px;
+    margin-top: 5px;
+    padding: 13px;
+    border-radius: 100px;
+    border: 1px solid gray;
+    background-color: #121212;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+   }
+   .signuppagecontainer button:hover{
+    border-color: #ffffff;
+    cursor: pointer;
+   }
+.next-buttonloginpage{
+background-color: #1ed760 !important; 
+color: black !important;
+font-size: medium;
+   }
+   .signuppagecontainer p{
+  color: gray;
+  font-size: medium; 
+  text-align: center; 
+  margin-top: 30px;
+  margin-right: 30px;
+  }
+  .enditem{
+    font-size: x-small !important;
+    margin-top: 20px !important;
+    padding-bottom: 20px;
+   padding-left: 70px;
+   padding-right: 70px;
+  }
+  .ortext{
+    text-align: center;
+    margin-bottom: 20px;
+    padding-right: 40px;
+    display: flex;
+    justify-content: center;
+    gap:10px;
+  }
+  .ortext div{
+    text-transform: none;
+  }
+  .orline{
+    flex-grow: 5px;
+    background-color: white;
+    height: 1px;
+    width: 120px;
+    margin-top: 9px;
+  }
+  .signuppagecontainer a{
+    text-decoration: underline;
+    color: white;
+  }
+  hr{
+   border: 1px solid gray;
+  width: 70%;
+  margin: auto;
+  margin-left: 40px;
+  }
+  .signupbutton{
+    background-image: url("images/Google__G__logo.svg.png");
+    background-size: 10px;
+  }
+  .googleimage{
+    position: absolute;
+    top:455px;
+    left:530px;
+  }
+.fbimage{
+      position: absolute;
+    top:534px;
+    left:530px;
+}
+  /*======================================= login page============================================================ */
+  .loginpagelogo{
+   width: 10%;
+  }
+  .headloginpage{
+    background-color: #000000;
+    padding: 30px;
+  }
+  .loginpagecontainer{
+    width:50%;
+    background-color: #000000;
+    color: #ffffff;
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  .loginpagecontainer h1{
+    font-size: 40px;
+    margin-bottom: 40px;
+    padding-top: 40px;
+  }
+  .loginpagecontainer button{
+    width: 50%;
+    overflow: hidden;
+    padding: 13px;
+    margin-top: 10px;
+    border-radius: 100px;
+    border: 1px solid gray;
+    background-color: #121212;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+  }
+  .loginpagecontainer input{
+    width: 40%;
+    overflow: hidden;
+    margin: 20px;
+    padding: 13px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    background-color: #121212;
+    color:#ffffff;
+    text-transform: none;
+  
+  }
+  .loginpagecontainer button:hover{
+    border-color: #ffffff;
+    cursor: pointer;
+  }
+  .googleloginpage{
+    position: absolute;
+    width:20px;
+    top:282px;
+   left:40%;
+  }
+.loginpageemail{
+  margin-right: 180px;
+  text-transform: none;
+  font-size: small;
+}
+.loginpagepassword{
+  margin-right: 230px;
+  text-transform: none;
+  font-size: small;
+}
+.buttonchange{
+padding: 10px;
+width: 40px !important;
+height: 20px;
+background-color: #1db954 !important;
+margin-right: 140px;
+margin-top: 0;
+}
+.buttonchange .fa-solid {
+  position: absolute;
+  top:764px;
+}
+.buttonchangediv span{
+  font-size: small;
+  position: absolute;
+  top:764px;
+  left: 590px;
+
+}
+.buttonchangediv {
+  text-align: left;
+  width: 40%;
+  margin: auto;
+}
+.loginloginpage{
+  background-color: #1db954 !important;
+  margin-top: 20px !important;
+  margin-bottom: 20px;
+}
+.fbloginpage{
+  position: absolute;
+  width:20px;
+  top:335px;
+ left:40%;
+}
+.appleloginpage{
+  position: absolute;
+  width:20px;
+  top:385px;
+ left:40%;
+}
+.loginppage hr{
+  width: 55%;
+  margin-left: 22%;
+  margin-top: 30px;
+  border: 1px solid gray;
+margin-bottom: 20px;
+}
+.loginpagecontainer p{
+  font-size: small;
+  padding-bottom: 20px;
+}
+.loginpagecontainer a{
+  text-decoration: underline;
+}
+.privacy{
+  font-size: x-small !important;
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+.preview1{
+  position: fixed;
+  bottom: 0;
+  left:0;
+  right: 0;
+ background-color: #000000;
+ padding: 15px;
+  display: flex;
+  justify-content: space-between;
+ color: gray;
+  gap:10px;
+font-size: small;
+
+}
+.previewimg{
+  display: flex;
+  justify-content: space-between;
+  gap:20px
+}
+.previewimg img{
+  border-radius: 10px;
+}
+.pri1{
+  margin-top: 10px; 
+   font-weight: bold;
+   font-size: x-small;
+}
+#prispan1{
+  font-size: x-small;
+  font-weight: bold;
+  margin-top: 10px;
+  color: gray;
+}
+.pri1 span{
+  color:#ffffff;
+  font-size: medium;
+}
+.pri2{
+  margin-top: 25px;
+  transition: 2s;
+}
+.pri2:hover{
+transform: scale(110%);
+cursor: pointer;
+color: #ffffff;
+}
+.preview1 button{
+  padding: 10px;
+  background-color: #000000;
+  color: #ffffff;
+  border-radius: 10px;
+  border: none;
+  margin: 10px;
+}
+.player input{
+  height: 2px;
+  width: 100%;
+}
+.playerdetails button{
+  margin: 5px;
+  margin-top: 30px;
+}
+.preview1 .fa-lg{
+  color: gray;
+}
+.preview1 button{
+  transition: 1s;
+}
+.preview1 button:hover{
+  color:#ffffff;
+  transform: scale(110%);
+  cursor: pointer;
+}
